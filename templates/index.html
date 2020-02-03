@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="jumbotron text-center">
+        <h3>Welcome to Oussama Derouiche Blog</h3>
+        <p>
+                You will be able to add, modify or delete an article.
+                The file (README.MD) will list the steps to follow for launching it.</p>
+</div>
+
+
+<p>
+        {% if request.user.is_authenticated %}
+                Logged In, {{request.user.username}}
+        {% else %}
+                Not Logged In
+        {% endif %}
+
+</p>
+{% endblock body %}
+
