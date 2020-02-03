@@ -13,6 +13,7 @@ docker-compose up -d
 
 docker-compose run web python manage.py migrate
 
+# test the App 
 ###### register  
 ###### go to Dashbord to add , modify , delete article 
 ###### go to article to search 
